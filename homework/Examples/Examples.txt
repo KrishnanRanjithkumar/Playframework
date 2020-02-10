@@ -1,0 +1,29 @@
+1) To Upload Project structure
+
+Send POST request to http://localhost:9000/
+
+with project structure in json format in Request Body
+please refer project_structure_example.json 
+
+
+
+2) To Download Project
+
+
+Send GET request to http://localhost:9000/:id 
+
+where id is project id to be downloaded.
+
+
+
+3) To Manipulate a task
+
+Send PUT request to http://localhost:9000/:projid/task/:taskid
+
+with task structure in request body
+
+Ex: 
+{
+"taskid":2,
+"start":"2020-02-10",
+"end":"2020-03-10"}
